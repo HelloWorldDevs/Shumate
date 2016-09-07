@@ -1,0 +1,29 @@
+
+//=================================
+//      Canvas Dependencies
+//=================================
+
+@import "dependencies/animate.scss";
+@import "dependencies/bootstrap.scss";
+@import "dependencies/swiper.scss";
+@import "dependencies/font-icons.scss";
+@import "dependencies/dark.scss";
+@import "dependencies/responsive.scss";
+
+
+//=================================
+//           Globals
+//=================================
+
+@import "globals/_breakpoints.scss";
+@import "globals/_colors.scss";
+@import "globals/_fonts.scss";
+
+
+//=================================
+//           Core
+//=================================
+
+@import "style.scss";
+@import "custom.scss";
+
