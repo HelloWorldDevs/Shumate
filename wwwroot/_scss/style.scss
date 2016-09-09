@@ -111,19 +111,19 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: #1ABC9C;
+	//background: #1ABC9C;
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #1ABC9C; /* Firefox */
+	//background: #1ABC9C; /* Firefox */
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-webkit-selection {
-	background: #1ABC9C; /* Safari */
+	//background: #1ABC9C; /* Safari */
 	color: #FFF;
 	text-shadow: none;
 }
@@ -148,7 +148,6 @@ a {
 	color: #1ABC9C;
 }
 
-a:hover { color: #222; }
 
 a img { border: none; }
 
@@ -195,12 +194,6 @@ h4 { font-weight: 600; }
 h5,
 h6 { font-weight: bold; }
 
-h1 > span:not(.nocolor),
-h2 > span:not(.nocolor),
-h3 > span:not(.nocolor),
-h4 > span:not(.nocolor),
-h5 > span:not(.nocolor),
-h6 > span:not(.nocolor) { color: #1ABC9C; }
 
 p,
 pre,
@@ -248,7 +241,6 @@ small { font-family: 'Lato', sans-serif; }
 	float: none;
 	width: 1220px;
 	margin: 0 auto;
-	background-color: #FFF;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -517,8 +509,6 @@ html[xmlns] .slider-wrap {display: block;}
 	-o-transition: all .3s ease-in-out;
 }
 
-.flex-control-nav li:hover a,
-.flex-control-nav li a.flex-active { background-color: #FFF; }
 
 
 
@@ -1198,7 +1188,6 @@ body.top-search-open #top-account { opacity: 0; }
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #FFF;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

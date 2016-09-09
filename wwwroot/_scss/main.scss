@@ -9,6 +9,7 @@
 @import "dependencies/font-icons.scss";
 @import "dependencies/dark.scss";
 @import "dependencies/responsive.scss";
+@import "style.scss";
 
 
 //=================================
@@ -21,10 +22,9 @@
 
 
 //=================================
-//           Core
+//           Custom
 //=================================
-
-@import "style.scss";
+@import "components/_header.scss";
 @import "custom.scss";
 
 
