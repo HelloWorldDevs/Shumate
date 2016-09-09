@@ -5,6 +5,11 @@
 	Overwriting Default Theme Styles for Better Hanlding Updates
 -----------------------------------------------------------------*/
 
+section {
+  background-position: center center;
+  background-size: cover;
+}
+
 #section-divider {
   height: 25px;
   background-color: #84bbb9;
