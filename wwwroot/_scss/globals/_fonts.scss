@@ -17,9 +17,22 @@ h6,
 #logo,
 #primary-menu ul li > a { font-family: 'Raleway', sans-serif; }
 
-.font-primary { font-family: 'Raleway', sans-serif !important; }
+.font-raleway { font-family: 'Raleway', sans-serif !important; }
 
-.font-secondary { font-family: 'Crete Round', serif !important; }
+.font-bitter { font-family: 'Bitter', serif !important;  }
+
+.font-weight-light {
+	font-weight: lighter;
+}
+
+.font-weight-reg {
+	font-weight: 400;
+}
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
 
 
 /* ----------------------------------------------------------------
@@ -35,6 +48,42 @@ h4,
 h5,
 h6 {
 	line-height: 1.5;
+}
+
+h3 {
+	font-size: 36px;
+	@media screen and (max-width: $width-lg) {
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
+}
+
+h4 {
+	font-size: 20px;
+	@media screen and (max-width: $width-lg) {
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
+}
+
+button.btn {
+	font-size: 20px;
+	@media screen and (max-width: $width-lg) {
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
 }
 
 #logo {
