@@ -49,10 +49,12 @@
   });
 
   const $tourCarousel = $(".owl-carousel");
+  
   $tourCarousel.owlCarousel({
     loop: true,
     autoPlay: true,
     nav: true,
+    dots: false,
     navText: [
       '<i class="icon-chevron-left"></i>',
       '<i class="icon-chevron-right"></i>'
@@ -66,11 +68,11 @@
       },
       550 : {
         items: 2,
-        margin: 10
+        margin: 20
       },
       768 : {
         items: 3,
-        margin: 20
+        margin: 30
       }
     }
   });
