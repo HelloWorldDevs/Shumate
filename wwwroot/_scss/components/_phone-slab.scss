@@ -13,10 +13,25 @@
   &__left {
     text-align: right;
     border-right: solid 1px #A69F9B;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+      border-right: none;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
   }
   &__right {
     text-align: left;
     margin-top: 5px;
+    @media screen and (max-width: $width-md) {
+      text-align: center;
+    }
+    @media screen and (max-width: $width-sm) {
+    }
+    @media screen and (max-width: $width-xs) {
+    }
   }
 }
 

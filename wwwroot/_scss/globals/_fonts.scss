@@ -50,6 +50,18 @@ h6 {
 	line-height: 1.5;
 }
 
+h1 {
+	font-size: 64px;
+	@media screen and (max-width: $width-lg) {
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
+}
+
 h3 {
 	font-size: 36px;
 	@media screen and (max-width: $width-lg) {
