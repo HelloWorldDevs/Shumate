@@ -618,39 +618,92 @@
 
 			</section>
 
-		</section>
+			<div id="requestModalContainer">
 
-	</div><!-- #content end -->
-
-	<!-- Footer
-  ============================================= -->
-	<footer id="footer" class="footer bg-dark">
-
-		<div id="" class="bg-dark section-padding">
-			<div class="container center">
-				<a href="https://www.facebook.com/Prairie-Garden-Dental-189398324428792" target="_blank" class="margin-btm notd"><i class="icon-facebook"></i></a>
-				<div class="font-white font-roboto font-weight-light notd">Copyrights &copy; 2016 All Rights Reserved by <a href="http://www.tysonsteele.com/" target="_blank" class="text-white notd">Tyson Steele Associates</a>.</div>
+				<div class="modal fade" id="requestAppointmentForm" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+							<h4 class="modal-title">Request an Appointment</h4>
+						</div>
+						<div class="modal-body">
+							<div class="form-error"></div>
+							<form id="mail-form" method="post" action="//web-api.tysonsteele.com/v1/webprops/KEY/schedule" class="margin-btm-half">
+								<h5>YES! Please contact me to schedule an appointment or answer any questions I might still have:</h5>
+								<div class="row appointment_input_row form-group">
+									<div class="col-xs-4">
+										<label for="name">Name:</label>
+									</div>
+									<div class="col-xs-8">
+										<input type="text" name="name" id="name" class="form-control appointment_form">
+									</div>
+								</div>
+								<div class="row appointment_input_row form-group honeypot_container sr-only">
+									<div class="col-xs-4">
+										<label for="email">Leave this field blank:</label>
+									</div>
+									<div class="col-xs-8">
+										<input type="email" name="email" id="email" class="form-control appointment_form">
+									</div>
+								</div>
+								<div class="row appointment_input_row form-group">
+									<div class="col-xs-4">
+										<label for="confirmed_email">Email:</label>
+									</div>
+									<div class="col-xs-8">
+										<input type="email" name="confirmed_email" id="confirmed_email" class="form-control appointment_form">
+									</div>
+								</div>
+								<div class="row appointment_input_row form-group margin-btm">
+									<div class="col-xs-4">
+										<label for="phone">Phone:</label>
+									</div>
+									<div class="col-xs-8">
+										<input type="text" name="phone" id="phone" class="form-control appointment_form">
+									</div>
+								</div>
+								<div class="center">
+									<button type="submit" class="btn bg-btn-default font-white margin-btm-half"><i class="icon-calendar3"></i> Request Appointment</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
 
-	</footer><!-- #footer end -->
+			</section>
 
-</div><!-- #wrapper end -->
+		</div><!-- #content end -->
 
-<!-- Go To Top
-============================================= -->
+		<!-- Footer
+    ============================================= -->
+		<footer id="footer" class="footer bg-dark">
 
-<!-- External JavaScripts
-============================================= -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="//birdeye.com/embed/v4/146947221304118/3/2382104700"></script>
+			<div id="" class="bg-dark section-padding">
+				<div class="container center">
+					<a href="https://www.facebook.com/Prairie-Garden-Dental-189398324428792" target="_blank" class="margin-btm notd"><i class="icon-facebook"></i></a>
+					<div class="font-white font-roboto font-weight-light notd">Copyrights &copy; 2016 All Rights Reserved by <a href="http://www.tysonsteele.com/" target="_blank" class="text-white notd">Tyson Steele Associates</a>.</div>
+				</div>
+			</div>
 
-<!-- Footer Scripts
-============================================= -->
-<script type="text/javascript" src="js/functions.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+  ============================================= -->
+
+	<!-- External JavaScripts
+  ============================================= -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/plugins.js"></script>
+	<script type="text/javascript" src="//birdeye.com/embed/v4/146947221304118/3/2382104700"></script>
+
+	<!-- Footer Scripts
+  ============================================= -->
+	<script type="text/javascript" src="js/functions.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
 
 
 </body>
