@@ -29,6 +29,10 @@ h6,
 	font-weight: 400;
 }
 
+.font-weight-bolder {
+	font-weight: 600;
+}
+
 .font-weight-bold {
 	font-weight: 700;
 }
@@ -52,6 +56,18 @@ h6 {
 
 h1 {
 	font-size: 64px;
+	@media screen and (max-width: $width-lg) {
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
+}
+
+h2 {
+	font-size: 55px;
 	@media screen and (max-width: $width-lg) {
 	}
 	@media screen and (max-width: $width-md) {
