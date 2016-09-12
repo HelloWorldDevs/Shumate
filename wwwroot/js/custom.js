@@ -2,24 +2,7 @@
   var HelloWorldDevs = function() {
 
   };
-
-  HelloWorldDevs.prototype.fixRows = function () {
-    var rowLength = ($(window).width() < 992) ? 2 : 3;
-    var mod = rowLength * this.rowNum;
-    var $cells = $('.section-services__service-tile');
-    var $loadMore = $('.load-more');
-    for (var x = 0; x < $cells.length; x++) {
-      if (x < mod) {
-        $($cells[x]).removeClass('hidden');
-      } else {
-        $($cells[x]).addClass('hidden');
-      }
-      if ($cells.length <= mod) {
-        $loadMore.hide();
-      }
-    }
-  };
-
+  
   HelloWorldDevs.prototype.noOrphans = function (selectors, exceptions) {
     $(selectors).not(exceptions).each(function () {
       $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
@@ -57,8 +40,6 @@
   };
 
   var HWD = new HelloWorldDevs();
-
-  HWD.fixRows();
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
   HWD.mailForm('#mail-form', '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Uid Goes Here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 
@@ -67,21 +48,29 @@
     $(this).next().removeClass('folded');
   });
 
-  $('.load-more').on("click", function () {
-    HWD.rowNum += 1;
-    HWD.fixRows();
+  const $tourCarousel = $(".owl-carousel");
+  $tourCarousel.owlCarousel({
+    loop: true,
+    autoPlay: true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    responsive : {
+      0 : {
+        items: 1,
+        margin: 0
+      },
+      550 : {
+        items: 2,
+        margin: 10
+      },
+      768 : {
+        items: 3,
+        margin: 20
+      }
+    }
   });
 
-  var mySwiper = new Swiper('.swiper-container', {
-      speed: 400,
-      autoplay: 8000
-    });
-
-
-  $(window).on("resize", function () {
-    HWD.fixRows();
-  });
-
+ 
   // specialsTemplate.init(
   //     '7fb35345-752d-4792-9480-cd3db6674a62',
   //     '#special_template',
