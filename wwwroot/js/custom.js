@@ -52,6 +52,11 @@
   $tourCarousel.owlCarousel({
     loop: true,
     autoPlay: true,
+    nav: true,
+    navText: [
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
+    ],
     autoplayTimeout:1000,
     autoplayHoverPause:true,
     responsive : {
