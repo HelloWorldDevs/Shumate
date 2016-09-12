@@ -112,19 +112,19 @@ dl, dt, dd, ol, ul, li {
 
 ::selection {
 	//background: #1ABC9C;
-	color: #FFF;
+	color: inherit;
 	text-shadow: none;
 }
 
 ::-moz-selection {
 	//background: #1ABC9C; /* Firefox */
-	color: #FFF;
+	color: inherit;
 	text-shadow: none;
 }
 
 ::-webkit-selection {
 	//background: #1ABC9C; /* Safari */
-	color: #FFF;
+	color: inherit;
 	text-shadow: none;
 }
 
