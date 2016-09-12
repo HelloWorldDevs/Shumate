@@ -48,8 +48,9 @@
     $(this).next().removeClass('folded');
   });
 
-  const $tourCarousel = $(".owl-carousel");
-  
+  const $tourCarousel = $(".tour-carousel");
+  const $tourModalCarousel = $(".tour-modal-carousel");
+
   $tourCarousel.owlCarousel({
     loop: true,
     autoPlay: true,
@@ -75,6 +76,20 @@
         margin: 30
       }
     }
+  });
+
+  $tourModalCarousel.owlCarousel({
+    items: 1,
+    loop: true,
+    autoPlay: true,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="icon-chevron-left"></i>',
+      '<i class="icon-chevron-right"></i>'
+    ],
+    autoplayTimeout:1000,
+    autoplayHoverPause:true
   });
 
  
