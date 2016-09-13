@@ -1,3 +1,9 @@
+//=================================
+//           Globals
+//=================================
+
+@import "globals/_breakpoints.scss";
+
 
 //=================================
 //      Canvas Dependencies
@@ -13,18 +19,11 @@
 
 
 //=================================
-//           Globals
-//=================================
-
-@import "globals/_breakpoints.scss";
-@import "globals/_colors.scss";
-@import "globals/_fonts.scss";
-
-
-//=================================
 //           Custom
 //=================================
 
+@import "globals/_colors.scss";
+@import "globals/_fonts.scss";
 @import "components/_accordian.scss";
 @import "components/_location-card.scss";
 @import "components/_phone-slab.scss";

@@ -162,9 +162,19 @@ button.btn {
 
 #primary-menu ul li > a {
 	font-weight: bold;
-	font-size: 13px;
 	letter-spacing: 1px;
 	text-transform: none;
+	font-size: 17px;
+	@media screen and (max-width: $width-lg) {
+		font-size: 14px;
+		letter-spacing: 0.7px;
+	}
+	@media screen and (max-width: $width-md) {
+	}
+	@media screen and (max-width: $width-sm) {
+	}
+	@media screen and (max-width: $width-xs) {
+	}
 }
 
 .area-byline {

@@ -683,10 +683,13 @@ body.stretched #header.full-header .container {
 #primary-menu ul li > a {
 	display: block;
 	line-height: 22px;
-	padding: 39px 15px;
+	padding: 39px 10px;
+	@media screen and (max-width: $width-lg) {
+		padding: 39px 5px;
+	}
 	color: #444;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 18px;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	font-family: 'Raleway', sans-serif;
