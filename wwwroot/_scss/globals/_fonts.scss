@@ -6,7 +6,7 @@
 
 
 
-body { font-family: 'Bitter', serif; }
+body { font-family: 'Source Sans Pro', sans-serif; }
 
 h1,
 h2,
@@ -16,7 +16,7 @@ h5,
 h6,
 #logo,
 #primary-menu ul li > a {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Bitter', serif;
 	margin-bottom: 0;
 	line-height: 1.5;
 	color: #5A5A5A;
@@ -26,11 +26,9 @@ p {
 	margin-bottom: 0;
 }
 
-.font-raleway { font-family: 'Raleway', sans-serif !important; }
-
 .font-bitter { font-family: 'Bitter', serif !important;  }
 
-.font-roboto { font-family: 'Roboto Condensed', serif !important;  }
+.font-source { font-family: 'Source Sans Pro', sans-serif !important;  }
 
 .font-weight-light {
 	font-weight: lighter;
@@ -164,12 +162,14 @@ button.btn {
 	font-weight: bold;
 	letter-spacing: 1px;
 	text-transform: none;
-	font-size: 17px;
+	font-size: 16px;
 	@media screen and (max-width: $width-lg) {
-		font-size: 14px;
+		font-size: 13px;
 		letter-spacing: 0.7px;
 	}
 	@media screen and (max-width: $width-md) {
+		font-size: 14px;
+		text-align: center;
 	}
 	@media screen and (max-width: $width-sm) {
 	}
@@ -180,4 +180,8 @@ button.btn {
 .area-byline {
 	font-size: 48px;
 	margin: 150px 0px;
+}
+
+#logo img {
+	max-width: 250px;
 }

@@ -72,7 +72,20 @@
   line-height: 1.0;
 }
 
+#mobile-background {
+  display: none;
+  @media (max-width: $width-md) {
+    display: block;
+    position: relative;
+  }
+}
 
+#slider {
+
+  @media (max-width: $width-md) {
+  display: none;
+  }
+}
 
 //Hover action for carousel images
 .img-container {
@@ -111,4 +124,11 @@
 #primary-menu-trigger {
   font-size: 20px;
   pointer-events: auto;
+}
+
+#mobile-background h1 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
 }
