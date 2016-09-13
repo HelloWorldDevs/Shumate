@@ -49,8 +49,9 @@
   });
 
   const $tourCarousel = $(".tour-carousel");
-  const $tourModalCarousel = $(".tour-modal-carousel");
+  const $tourModalCarousel = $('.tour-modal-carousel');
 
+  // initiate tour carousel
   $tourCarousel.owlCarousel({
     loop: true,
     autoPlay: true,
@@ -78,6 +79,7 @@
     }
   });
 
+  // initial carousel in modal
   $tourModalCarousel.owlCarousel({
     items: 1,
     loop: true,
@@ -90,6 +92,11 @@
     ],
     autoplayTimeout:1000,
     autoplayHoverPause:true
+  });
+  
+  $('.img-container').click(function() {
+    const tourIndex = $(this).attr('carousel-target');
+    $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
   });
 
  
