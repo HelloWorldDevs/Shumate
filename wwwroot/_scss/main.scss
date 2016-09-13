@@ -14,8 +14,8 @@
 @import "dependencies/swiper.scss";
 @import "dependencies/font-icons.scss";
 @import "dependencies/dark.scss";
-@import "dependencies/responsive.scss";
 @import "style.scss";
+@import "dependencies/responsive.scss";
 
 
 //=================================
@@ -106,4 +106,9 @@
 }
 #section-insurance p {
   line-height: 1;
+}
+
+#primary-menu-trigger {
+  font-size: 20px;
+  pointer-events: auto;
 }

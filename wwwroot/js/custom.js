@@ -99,6 +99,10 @@
     $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
   });
 
+  $('#primary-menu-trigger').click(function() {
+    console.log("clicked");
+  });
+
  
   // specialsTemplate.init(
   //     '7fb35345-752d-4792-9480-cd3db6674a62',
