@@ -30,6 +30,8 @@ p {
 
 .font-source { font-family: 'Source Sans Pro', sans-serif !important;  }
 
+.font-raleway { font-family: 'Raleway', serif !important;  }
+
 .font-weight-light {
 	font-weight: lighter;
 }
@@ -44,6 +46,11 @@ p {
 
 .font-weight-bold {
 	font-weight: 700;
+}
+
+.font-large-bold {
+	font-size: 110%;
+	font-weight: bold;
 }
 
 
@@ -100,10 +107,21 @@ h3 {
 	}
 	@media screen and (max-width: $width-xs) {
 	}
+	&.phone-number {
+		font-size: 40px;
+		@media screen and (max-width: $width-lg) {
+		}
+		@media screen and (max-width: $width-md) {
+		}
+		@media screen and (max-width: $width-sm) {
+		}
+		@media screen and (max-width: $width-xs) {
+		}
+	}
 }
 
 h4 {
-	font-size: 26px;
+	font-size: 25px;
 	@media screen and (max-width: $width-lg) {
 	}
 	@media screen and (max-width: $width-md) {
@@ -141,8 +159,8 @@ h6 {
 a.btn,
 button.btn {
 	font-size: 20px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: 60px;
+	padding-right: 60px;
 	@media screen and (max-width: $width-lg) {
 	}
 	@media screen and (max-width: $width-md) {
