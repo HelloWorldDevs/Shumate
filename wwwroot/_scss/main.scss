@@ -59,8 +59,18 @@
   padding: 30px;
 }
 
+.padding-vert {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padding-vert-2x {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .line-height-small {
-  line-height: 0.9;
+  line-height: 1.0;
 }
 
 
@@ -92,6 +102,9 @@
   }
 }
 
+#section-insurance {
+  padding-top: 50px;
+}
 #section-insurance p {
   line-height: 1;
 }
