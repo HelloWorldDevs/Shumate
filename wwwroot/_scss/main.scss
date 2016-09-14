@@ -40,6 +40,12 @@
 
 .btn {
   padding: 17px 15px;
+  @media screen and (max-width: $width-lg) {
+    padding: 12px 15px;
+  }
+  @media screen and (max-width: $width-md) {
+    padding: 12px 15px;
+  }
 }
 
 .margin-btm {
@@ -121,6 +127,13 @@
     font-size: 60px;
     left: 45%;
     z-index: 11;
+    @media screen and (max-width: $width-md) {
+      top: 27%;
+    }
+    @media screen and (max-width: $width-md) {
+      top: 20%;
+      font-size: 55px;
+    }
   }
   &:hover:before {
     content: " ";
@@ -151,4 +164,16 @@
   text-align: center;
   width: 100%;
   color: white;
+  top: 45%;
+}
+
+.reviews-wrap {
+  padding: 0px 40px;
+}
+
+.mobile-background-card {
+  @media (max-width: $width-sm) {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+  }
 }

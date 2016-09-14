@@ -10,6 +10,13 @@
     line-height: 1.2;
   }
 
+  h3 {
+    @media screen and (max-width: $width-md) {
+      margin-bottom: 30px;
+    }
+  }
+
+
   &__left {
     text-align: right;
     border-right: solid 1px #A69F9B;
