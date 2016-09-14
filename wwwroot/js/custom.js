@@ -2,13 +2,11 @@
   var HelloWorldDevs = function() {
 
   };
-  
   HelloWorldDevs.prototype.noOrphans = function (selectors, exceptions) {
     $(selectors).not(exceptions).each(function () {
       $(this).html($(this).html().replace(/\s([^\s<]{0,10})\s*$/, '&nbsp;$1'));
     });
   };
-
   HelloWorldDevs.prototype.mailForm = function (form, uid) {
     var $form = $(form);
     $form.before('<div class="form-error"></div>');
@@ -38,18 +36,19 @@
       });
     });
   };
-
   var HWD = new HelloWorldDevs();
+  const $tourCarousel = $(".tour-carousel");
+  const $tourModalCarousel = $('.tour-modal-carousel');
+
+
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
   HWD.mailForm('#mail-form', '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Uid Goes Here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
 
+  // assign event handles to accordions
   $('.ui-accordion-header').click(function () {
     $(this).parent().find('.ui-accordion-content').addClass('folded');
     $(this).next().removeClass('folded');
   });
-
-  const $tourCarousel = $(".tour-carousel");
-  const $tourModalCarousel = $('.tour-modal-carousel');
 
   // initiate tour carousel
   $tourCarousel.owlCarousel({
@@ -103,6 +102,16 @@
     console.log("clicked");
   });
 
+  // initiate swiper
+  const mySwiper = new Swiper('.swiper-container', {
+    speed: 400,
+    autoplay: 8000
+  });
+
+  // fix rendering ghost in tour modal
+  $('#tourModal').on('shown.bs.modal', function() {
+    $('.tour-modal-item').removeClass('tour-modal-item');
+  })
  
   // specialsTemplate.init(
   //     '7fb35345-752d-4792-9480-cd3db6674a62',
