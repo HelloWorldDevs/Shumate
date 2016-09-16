@@ -229,3 +229,7 @@
   background-repeat: repeat;
   background-size: initial;
 }
+
+a[href="tel:*"] {
+  cursor: pointer;
+}
