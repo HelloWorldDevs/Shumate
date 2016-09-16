@@ -139,7 +139,7 @@
     ],
     doubleclickzoom: false,
     controls: {
-      panControl: true,
+      panControl: false,
       zoomControl: true,
       mapTypeControl: false,
       scaleControl: false,
