@@ -222,6 +222,9 @@
 
 #section-location img {
   max-width: 290px;
+  @media (max-width: $width-md) {
+    max-width: 100%;
+  }
 }
 
 .tile-bg {
