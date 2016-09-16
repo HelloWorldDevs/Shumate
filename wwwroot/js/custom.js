@@ -128,7 +128,7 @@
 
 
   $('#google-map5').gMap({
-    address: '41.6290814,-88.440303',
+    address: '41.6290814,-88.445303',
     maptype: 'ROADMAP',
     zoom: 14,
     markers: [
