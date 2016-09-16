@@ -128,9 +128,9 @@
     left: 45%;
     z-index: 11;
     @media screen and (max-width: $width-md) {
-      top: 27%;
+      top: 20%;
     }
-    @media screen and (max-width: $width-md) {
+    @media screen and (max-width: $width-sm) {
       top: 20%;
       font-size: 55px;
     }
@@ -180,7 +180,7 @@
 
 .icon-arrow-down {
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10000px;
   width: 50px;
   height: 50px;
@@ -196,4 +196,33 @@
   margin: 0 0 20px 0;
   padding: 0 0 0 30px;
   display: none;
+}
+
+.hidden-xxs {
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+
+#google-map5 {
+  height: 790px;
+  @media (max-width: $width-md) {
+    height: 300px;
+  }
+}
+
+.floating-card {
+  position: absolute !important;
+  z-index: 10;
+}
+
+#section-location img {
+  max-width: 290px;
+}
+
+.tile-bg {
+  background-image: url("assets/beige-bg-vlk.jpg");
+  background-repeat: repeat;
+  background-size: initial;
 }

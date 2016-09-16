@@ -56,6 +56,7 @@
   $tourCarousel.owlCarousel({
     loop: true,
     autoPlay: true,
+    autoPlaySpeed: 6000,
     nav: true,
     dots: false,
     navText: [
@@ -85,6 +86,7 @@
     items: 1,
     loop: true,
     autoPlay: true,
+    autoPlaySpeed: 6000,
     nav: true,
     dots: false,
     navText: [
@@ -107,7 +109,7 @@
   // initiate swiper
   const mySwiper = new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: 8000
+    autoplay: 6000
   });
 
   // fix rendering ghost in tour modal
@@ -123,6 +125,29 @@
   //       period_label: '#period_label'
   //     }
   // );
+
+
+  $('#google-map5').gMap({
+    address: '41.6290814,-88.440303',
+    maptype: 'ROADMAP',
+    zoom: 14,
+    markers: [
+      {
+        address: "41.6286678,-88.4529315",
+        html: "Dr. Scott Vlk, DDS"
+      }
+    ],
+    doubleclickzoom: false,
+    controls: {
+      panControl: true,
+      zoomControl: true,
+      mapTypeControl: false,
+      scaleControl: false,
+      streetViewControl: false,
+      overviewMapControl: false
+    }
+  });
+
 
 
 })(jQuery);
