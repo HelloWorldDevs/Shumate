@@ -236,3 +236,17 @@
 a[href="tel:*"] {
   cursor: pointer;
 }
+
+body {
+  padding-right: 0px !important
+}
+
+.modal-open {
+  overflow-y: auto;
+}
+
+@media (max-width: $width-xs) {
+  #logo a {
+    float: right;
+  }
+}

@@ -22,3 +22,42 @@
     margin-right: auto;
   }
 }
+
+.icon-google {
+  margin-right: 20px;
+  color: white;
+  font-size: 25px;
+  background-color: #d34836;
+  width: 37px;
+  text-align: center;
+  border-radius: 8px;
+  float: right;
+  @media (max-width: $width-sm) {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.fa-yelp {
+  margin-right: 20px;
+  color: white;
+  font-size: 25px;
+  background-color: #c41200;
+  width: 37px;
+  height: 37px;
+  text-align: center;
+  border-radius: 8px;
+  float: right;
+  @media (max-width: $width-sm) {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.fa-yelp:before {
+  content: "\f1e9";
+  top: 5px;
+  position: relative;
+}

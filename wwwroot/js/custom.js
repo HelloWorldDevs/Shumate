@@ -39,8 +39,8 @@
   };
 
   var HWD = new HelloWorldDevs();
-  const $tourCarousel = $(".tour-carousel");
-  const $tourModalCarousel = $('.tour-modal-carousel');
+  var $tourCarousel = $(".tour-carousel");
+  var $tourModalCarousel = $('.tour-modal-carousel');
 
 
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
@@ -98,7 +98,7 @@
   });
   
   $('.img-container').click(function() {
-    const tourIndex = $(this).attr('carousel-target');
+    var tourIndex = $(this).attr('carousel-target');
     $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
   });
 
@@ -115,7 +115,7 @@
   // fix rendering ghost in tour modal
   $('#tourModal').on('shown.bs.modal', function() {
     $('.tour-modal-item').removeClass('tour-modal-item');
-  })
+  });
  
   // specialsTemplate.init(
   //     '7fb35345-752d-4792-9480-cd3db6674a62',
