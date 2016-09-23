@@ -121,26 +121,19 @@
   //       period_label: '#period_label'
   //     }
   // );
+  
+  // kills menu offsets for tablet and mobile on load
+  if ($(window).width() < 993) {
+    $('#logo').find('a').attr('data-offset', '0');
+  }
 
-
-  $('#google-map5').gMap({
-    address: '41.6290814,-88.445303',
-    maptype: 'ROADMAP',
-    zoom: 14,
-    markers: [
-      {
-        address: "41.6286678,-88.4529315",
-        html: "Dr. Scott Vlk, DDS"
-      }
-    ],
-    doubleclickzoom: false,
-    controls: {
-      panControl: false,
-      zoomControl: true,
-      mapTypeControl: false,
-      scaleControl: false,
-      streetViewControl: false,
-      overviewMapControl: false
+  // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
+  $(window).resize(function() {
+    if ($(window).width() < 993) {
+      // sets all menu offset to zero for mobile
+      $('#logo').find('a').attr('data-offset', '0');
+    } else {
+      $('#logo').find('a').attr('data-offset', '40');
     }
   });
 

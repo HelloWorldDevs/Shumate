@@ -103,7 +103,7 @@
 
 #mobile-background {
   display: none;
-  @media (max-width: $width-md) {
+  @media (max-width: $width-sm) {
     display: block;
     position: relative;
   }
@@ -111,7 +111,7 @@
 
 #slider {
 
-  @media (max-width: $width-md) {
+  @media (max-width: $width-sm) {
   display: none;
   }
 }
@@ -270,3 +270,31 @@ a[href="tel:*"] {
   }
 }
 
+
+.animated.infinite.bounce {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+}
+
+
+#section-location {
+  background-image: url('./../assets/map.png');
+  @media (max-width: $width-sm) {
+    background-image: none;
+    background-color: white;
+    & .location-card {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      border: none;
+    }
+    & .mobile-map {
+      height: 300px;
+      background-position: center center;
+    }
+    //& .padding-vert-2x {
+    //  padding-top: 0px;
+    //  padding-bottom: 0px;
+    //}
+  }
+}

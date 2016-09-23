@@ -76,6 +76,7 @@ h1 {
 		font-size: 55px;
 	}
 	@media screen and (max-width: $width-md) {
+		font-size: 50px;
 	}
 	@media screen and (max-width: $width-sm) {
 		font-size: 44px;
@@ -173,7 +174,7 @@ h6 {
 
 a.btn,
 button.btn {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Bitter', sans-serif;
 	font-size: 20px;
 	padding-left: 60px;
 	padding-right: 60px;
@@ -191,7 +192,7 @@ button.btn {
 }
 
 p {
-	font-size: 18px;
+	font-size: 16px;
 	@media screen and (max-width: $width-sm) {
 	font-size: 16px;
 	}

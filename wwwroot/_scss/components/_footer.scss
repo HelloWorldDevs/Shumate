@@ -8,34 +8,47 @@
 
 
 
-.icon-facebook {
+.fa-facebook {
+  margin-right: 20px;
   color: white;
   font-size: 25px;
   background-color: #3B5998;
   width: 37px;
+  height: 37px;
   text-align: center;
   border-radius: 8px;
   float: right;
   @media (max-width: $width-sm) {
+    margin-bottom: 20px;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  &:before {
+    top: 5px;
+    position: relative;
   }
 }
 
-.icon-google {
+.fa-google-plus {
   margin-right: 20px;
   color: white;
   font-size: 25px;
   background-color: #d34836;
   width: 37px;
+  height: 37px;
   text-align: center;
   border-radius: 8px;
   float: right;
   @media (max-width: $width-sm) {
+    margin-bottom: 20px;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+  }
+  &:before {
+    top: 5px;
+    position: relative;
   }
 }
 
@@ -50,14 +63,13 @@
   border-radius: 8px;
   float: right;
   @media (max-width: $width-sm) {
+    margin-bottom: 20px;
     float: none;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
   }
-}
-
-.fa-yelp:before {
-  content: "\f1e9";
-  top: 5px;
-  position: relative;
+  &:before {
+    top: 5px;
+    position: relative;
+  }
 }
