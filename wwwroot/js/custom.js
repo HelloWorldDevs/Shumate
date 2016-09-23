@@ -102,10 +102,6 @@
     $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
   });
 
-  $('#primary-menu-trigger').click(function() {
-    console.log("clicked");
-  });
-
   // initiate swiper
   const mySwiper = new Swiper('.swiper-container', {
     speed: 400,
