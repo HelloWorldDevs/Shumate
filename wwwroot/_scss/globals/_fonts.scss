@@ -29,29 +29,7 @@ p {
 
 .font-source { font-family: 'Source Sans Pro', sans-serif !important;  }
 
-.font-raleway { font-family: 'Archivo Narrow', serif !important;  }
-
-.font-weight-light {
-	font-weight: lighter;
-}
-
-.font-weight-reg {
-	font-weight: 400;
-}
-
-.font-weight-bolder {
-	font-weight: 600;
-}
-
-.font-weight-bold {
-	font-weight: 700;
-}
-
-.font-large-bold {
-	font-size: 110%;
-	font-weight: bold;
-}
-
+.font-archivo { font-family: 'Archivo Narrow', serif !important;  }
 
 
 /* ----------------------------------------------------------------
@@ -70,7 +48,7 @@ h6 {
 }
 
 h1 {
-	font-size: 64px;
+	font-size: 80px;
 	@media screen and (max-width: $width-lg) {
 		font-size: 55px;
 	}
@@ -86,7 +64,7 @@ h1 {
 }
 
 h2 {
-	font-size: 55px;
+	font-size: 48px;
 	@media screen and (max-width: $width-lg) {
 		font-size: 45px;
 	}
@@ -100,9 +78,7 @@ h2 {
 		font-size: 28px;
 	}
 }
-.heading h2 {
-	margin-bottom: 30px;
-}
+
 
 h3 {
 	font-size: 36px;
@@ -133,7 +109,7 @@ h3 {
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 32px;
 	@media screen and (max-width: $width-lg) {
 		font-size: 20px;
 	}
@@ -147,7 +123,7 @@ h4 {
 }
 
 h5 {
-	font-size: 20px;
+	font-size: 24px;
 	@media screen and (max-width: $width-lg) {
 		font-size: 18px;
 	}
@@ -173,7 +149,7 @@ h6 {
 
 a.btn,
 button.btn {
-	font-family: 'Bitter', sans-serif;
+	font-family: 'Archivo Narrow', sans-serif;
 	font-size: 20px;
 	padding-left: 60px;
 	padding-right: 60px;
@@ -225,34 +201,4 @@ p {
 	}
 	@media screen and (max-width: $width-xs) {
 	}
-}
-
-.area-byline {
-	font-size: 48px;
-	margin: 150px 0px;
-	@media screen and (max-width: $width-lg) {
-		font-size: 38px;
-	}
-	@media screen and (max-width: $width-md) {
-		font-size: 30px;
-		margin: 120px 0px;
-	}
-	@media screen and (max-width: $width-sm) {
-		font-size: 26px;
-		margin: 100px 0px;
-	}
-	@media screen and (max-width: $width-xs) {
-		font-size: 24px;
-		margin: 80px 0px;
-	}
-	margin: 150px 0px;
-}
-
-#logo img {
-	max-width: 250px;
-}
-
-#section-services p {
-	font-family: 'Bitter', serif;
-	margin-bottom: 20px;
 }

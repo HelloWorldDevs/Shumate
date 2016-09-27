@@ -117,7 +117,7 @@
 }
 
 //Hover action for carousel images
-.img-container {
+.img-hover {
   margin: 0 auto;
   display: inline-block;
   position: relative;
@@ -292,9 +292,5 @@ a[href="tel:*"] {
       height: 300px;
       background-position: center center;
     }
-    //& .padding-vert-2x {
-    //  padding-top: 0px;
-    //  padding-bottom: 0px;
-    //}
   }
 }

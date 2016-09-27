@@ -39,8 +39,6 @@
   };
 
   var HWD = new HelloWorldDevs();
-  var $tourCarousel = $(".tour-carousel");
-  var $tourModalCarousel = $('.tour-modal-carousel');
 
 
   HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
@@ -52,37 +50,11 @@
     $(this).next().removeClass('folded');
   });
 
-  // initiate tour carousel
-  $tourCarousel.owlCarousel({
-    loop: true,
-    autoPlay: true,
-    autoPlaySpeed: 6000,
-    nav: true,
-    dots: false,
-    navText: [
-      '<i class="icon-chevron-left"></i>',
-      '<i class="icon-chevron-right"></i>'
-    ],
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    responsive : {
-      0 : {
-        items: 1,
-        margin: 0
-      },
-      550 : {
-        items: 2,
-        margin: 20
-      },
-      768 : {
-        items: 3,
-        margin: 30
-      }
-    }
-  });
+  var $teamCarousel = $(".team-carousel");
+  var $tourCarousel = $(".tour-carousel");
 
-  // initial carousel in modal
-  $tourModalCarousel.owlCarousel({
+  // initiate team carousel
+  $teamCarousel.owlCarousel({
     items: 1,
     loop: true,
     autoPlay: true,
@@ -90,16 +62,28 @@
     nav: true,
     dots: false,
     navText: [
-      '<i class="icon-chevron-left"></i>',
-      '<i class="icon-chevron-right"></i>'
+      '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'
     ],
     autoplayTimeout:1000,
     autoplayHoverPause:true
   });
-  
-  $('.img-container').click(function() {
-    var tourIndex = $(this).attr('carousel-target');
-    $tourModalCarousel.trigger('to.owl.carousel', [ tourIndex , 0] );
+
+  // initiate team carousel
+  $tourCarousel.owlCarousel({
+    items: 1,
+    loop: true,
+    autoPlay: true,
+    autoPlaySpeed: 6000,
+    nav: true,
+    dots: false,
+    navText: [
+      '<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>',
+      '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'
+    ],
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    autoHeight: true
   });
 
   // initiate swiper
@@ -108,19 +92,6 @@
     autoplay: 6000
   });
 
-  // fix rendering ghost in tour modal
-  $('#tourModal').on('shown.bs.modal', function() {
-    $('.tour-modal-item').removeClass('tour-modal-item');
-  });
- 
-  // specialsTemplate.init(
-  //     '7fb35345-752d-4792-9480-cd3db6674a62',
-  //     '#special_template',
-  //     {
-  //       period_ends: '#period_ends',
-  //       period_label: '#period_label'
-  //     }
-  // );
   
   // kills menu offsets for tablet and mobile on load
   if ($(window).width() < 993) {
@@ -136,7 +107,5 @@
       $('#logo').find('a').attr('data-offset', '40');
     }
   });
-
-
 
 })(jQuery);
