@@ -279,7 +279,7 @@ a[href="tel:*"] {
 
 
 #section-location {
-  background-image: url('./../assets/map.png');
+  background-image: url('./../images/shumate-map.png');
   @media (max-width: $width-sm) {
     background-image: none;
     background-color: white;
@@ -293,4 +293,12 @@ a[href="tel:*"] {
       background-position: center center;
     }
   }
+}
+
+#section-logos img {
+  max-width: 180px;
+}
+
+.container-modal-fix {
+  width: 100%;
 }
