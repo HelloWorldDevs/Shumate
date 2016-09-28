@@ -1178,7 +1178,7 @@ body:not(.top-search-open) #top-account {
 	opacity: 1;
 	-webkit-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
 	-o-transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
-	transition: height .4s ease, margin .4s ease, opacity .2s .2s ease;
+	transition: all .4s ease, margin .4s ease, opacity .2s .2s ease;
 }
 
 body.top-search-open #header-wrap #logo,

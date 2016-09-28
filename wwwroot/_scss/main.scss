@@ -302,3 +302,32 @@ a[href="tel:*"] {
 .container-modal-fix {
   width: 100%;
 }
+
+//Custom header with logo centered and items distributed left and right
+#primary-menu {
+  width: 100%;
+  & ul {
+    width: 100%;
+  }
+}
+
+#header.full-header #logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -107px;
+  top: 20px;
+  margin-right: 0px;
+}
+
+#logo img {
+  height: 140px;
+}
+
+#header.sticky-header #logo {
+  margin-left: -61px;
+  top: 5px;
+}
+
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img {
+  height: 80px;
+}
