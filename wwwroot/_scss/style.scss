@@ -5478,13 +5478,13 @@ blockquote.pull-right {
 	margin-top: -18px;
 	left: -36px;
 	zoom: 1;
-	width: 36px;
-	height: 36px;
+	//width: 36px;
+	//height: 36px;
 	line-height: 32px;
-	border: 1px solid rgba(255, 255, 255, 0.8);
-	color: #FFF;
-	background-color: #5A5A5A;
-	font-size: 18px;
+	//border: 1px solid rgba(255, 255, 255, 0.8);
+	color: #027D82;
+	background-color: #FFF;
+	font-size: 36px;
 	border-radius: 50%;
 	opacity: 0;
 	-webkit-transition: all .3s ease;
@@ -5530,8 +5530,8 @@ blockquote.pull-right {
 }
 
 .owl-carousel .owl-nav [class*=owl-]:hover {
-	background-color: #878787 !important;
-	color: #FFF !important;
+	background-color: #FFF !important;
+	color: #025055 !important;
 	text-decoration: none;
 }
 

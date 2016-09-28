@@ -35,6 +35,15 @@
 .font-purple {
   color: #5c5c5c;
 }
+
+.font-shadowed {
+  text-shadow: 2px 2px 5px white;
+}
+
+.font-shadowed-dark {
+  text-shadow: 0px 0px 7px #4A4A4A;
+}
+
 //Background Colors
 //==============================
 
@@ -55,6 +64,11 @@
 }
 .bg-btn-default {
   background-color: #4EA292;
+}
+
+.bg-paper-fibers {
+  background-image: url('/images/paper-fibers-tile.jpg');
+  background-size: auto;
 }
 
 //Feature Colors

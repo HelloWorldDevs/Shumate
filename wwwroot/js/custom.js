@@ -66,7 +66,8 @@
       '<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>'
     ],
     autoplayTimeout:1000,
-    autoplayHoverPause:true
+    autoplayHoverPause:true,
+    margin: 5
   });
 
   // initiate team carousel
