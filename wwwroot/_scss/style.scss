@@ -234,6 +234,12 @@ small { font-family: 'Lato', sans-serif; }
 
 .fright { float: right !important; }
 
+.fright-mobile-fix {
+	@media (max-width: 768px) {
+	float: none !important;
+	}
+}
+
 .fleft { float: left !important; }
 
 .fnone { float: none !important; }
