@@ -144,21 +144,15 @@ a:hover.link-underline {
   display: inline-block;
   position: relative;
   &:hover:after {
-    font-family: 'Bitter';
     content: "+";
     position: absolute;
-    top: 35%;
+    top: 50%;
+    margin-top: -45px;
     color: white;
     font-size: 60px;
-    left: 45%;
+    left: 50%;
+    margin-left: -15px;
     z-index: 11;
-    @media screen and (max-width: $width-md) {
-      top: 20%;
-    }
-    @media screen and (max-width: $width-sm) {
-      top: 20%;
-      font-size: 55px;
-    }
   }
   &:hover:before {
     content: " ";
@@ -401,3 +395,13 @@ max-width: 200px;
 margin-right: auto;
 margin-left: auto;
 }
+
+.mobile-service-image {
+  padding-top: 15px;
+}
+
+.mobile-service-image img {
+  max-width: 220px;
+}
+
+
