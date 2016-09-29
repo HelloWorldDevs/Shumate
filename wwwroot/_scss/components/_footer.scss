@@ -8,18 +8,20 @@
 
 
 
-.fa-facebook {
+.icon-facebook {
   margin-right: 20px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #3B5998;
   width: 37px;
   height: 37px;
   text-align: center;
   border-radius: 8px;
   float: right;
+  margin-top: -30px;
   @media (max-width: $width-sm) {
     margin-bottom: 20px;
+    margin-top: 0px;
     float: none;
     //margin-left: auto;
     //margin-right: auto;
@@ -30,17 +32,19 @@
   }
 }
 
-.fa-google-plus {
+.icon-gplus {
   margin-right: 20px;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   background-color: #d34836;
   width: 37px;
   height: 37px;
   text-align: center;
   border-radius: 8px;
   float: right;
+  margin-top: -30px;
   @media (max-width: $width-sm) {
+    margin-top: 0px;
     margin-bottom: 20px;
     float: none;
     //margin-left: auto;
