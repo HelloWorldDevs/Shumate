@@ -41,6 +41,13 @@
   }
 }
 
+.section-padding-half {
+  padding: 30px 0px;
+  @media (max-width: $width-md) {
+    padding: 15px 0px;
+  }
+}
+
 .btn {
   padding: 17px 15px;
   @media screen and (max-width: $width-lg) {
@@ -89,6 +96,12 @@
   padding-bottom: 60px;
 }
 
+.padding-hor {
+  padding-left: 30px;
+  padding-right: 30px;
+  display: inline-block;
+}
+
 .padding-right {
   padding-right: 45px;
 }
@@ -101,6 +114,10 @@
   line-height: 1.0;
 }
 
+.section-border-vert {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
 a:hover.link-underline {
   text-decoration: underline;
   color: inherit;
