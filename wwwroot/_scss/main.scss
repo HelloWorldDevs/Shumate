@@ -101,6 +101,11 @@
   line-height: 1.0;
 }
 
+a:hover.link-underline {
+  text-decoration: underline;
+  color: inherit;
+}
+
 #mobile-background {
   display: none;
   @media (max-width: $width-sm) {
@@ -372,4 +377,10 @@ a[href="tel:*"] {
 .owl-nav [class*=owl-] i {
   width: 36px;
   //font-size: 36px;
+}
+
+.team-carousel .owl-item img {
+max-width: 200px;
+margin-right: auto;
+margin-left: auto;
 }
