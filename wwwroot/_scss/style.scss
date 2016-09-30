@@ -724,8 +724,16 @@ body.stretched #header.full-header .container {
 	margin: 0 0 0 5px;
 }
 
+#primary-menu > ul > li:nth-child(1) > a, #primary-menu > ul > li:nth-child(1) > a:hover {
+	color:#A0383F;
+}
+
+#primary-menu > ul > li:nth-child(2) > a, #primary-menu > ul > li:nth-child(2) > a:hover {
+	color:#b78f48;
+}
+
 #primary-menu ul li:hover > a,
-#primary-menu ul li.current > a { color: #1ABC9C; }
+#primary-menu ul li.current > a {  }
 
 #primary-menu > ul > li.sub-menu > a > div { }
 
