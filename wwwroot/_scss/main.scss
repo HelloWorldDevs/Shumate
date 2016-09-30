@@ -120,7 +120,7 @@
 }
 a:hover.link-underline {
   text-decoration: underline;
-  color: inherit;
+  color: #4EA292;
 }
 
 #mobile-background {
@@ -271,8 +271,8 @@ a[href="tel:*"] {
     background-color: white;
     background-image: none;
     & .padding-vert-2x {
-      padding-top: 0px;
-      padding-bottom: 0px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
   }
   & p {
@@ -397,7 +397,7 @@ margin-left: auto;
 }
 
 .mobile-service-image {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .mobile-service-image img {
@@ -406,4 +406,6 @@ margin-left: auto;
 
 // request modal form
 
-
+a:hover.force-hover-underline {
+  text-decoration: underline !important;
+}
