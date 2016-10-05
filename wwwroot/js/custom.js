@@ -96,16 +96,16 @@
   
   // kills menu offsets for tablet and mobile on load
   if ($(window).width() < 993) {
-    $('#logo, #primary-menu').find('a').attr('data-offset', '0');
+    $('#logo, #primary-menu, #slider').find('a').attr('data-offset', '0');
   }
 
   // Fix scrollTo offsets on tablet and mobile versions (sets data offsets to zero)
   $(window).resize(function() {
     if ($(window).width() < 993) {
       // sets all menu offset to zero for mobile
-      $('#logo, #primary-menu').find('a').attr('data-offset', '0');
+      $('#logo, #primary-menu, #slider').find('a').attr('data-offset', '0');
     } else {
-      $('#logo, #primary-menu').find('a').attr('data-offset', '60');
+      $('#logo, #primary-menu, #slider').find('a').attr('data-offset', '60');
     }
   });
 
