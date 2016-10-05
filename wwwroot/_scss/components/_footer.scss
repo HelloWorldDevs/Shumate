@@ -8,72 +8,51 @@
 
 
 
+
+a.si-facebook {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  @media (max-width: $width-md) {
+    float: none;
+  }
+}
+
 .icon-facebook {
-  margin-right: 20px;
-  color: white;
-  font-size: 20px;
-  background-color: #3B5998;
-  width: 37px;
-  height: 37px;
-  text-align: center;
-  border-radius: 8px;
-  float: right;
-  margin-top: -30px;
-  @media (max-width: $width-sm) {
-    margin-bottom: 20px;
-    margin-top: 0px;
-    float: none;
-    //margin-left: auto;
-    //margin-right: auto;
-  }
-  &:before {
-    top: 5px;
-    position: relative;
-  }
-}
-
-.icon-gplus {
-  margin-right: 20px;
-  color: white;
-  font-size: 20px;
-  background-color: #d34836;
-  width: 37px;
-  height: 37px;
-  text-align: center;
-  border-radius: 8px;
-  float: right;
-  margin-top: -30px;
-  @media (max-width: $width-sm) {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    float: none;
-    //margin-left: auto;
-    //margin-right: auto;
-  }
-  &:before {
-    top: 5px;
-    position: relative;
-  }
-}
-
-.fa-yelp {
-  margin-right: 20px;
   color: white;
   font-size: 25px;
-  background-color: #c41200;
+  background-color: #3B5998;
   width: 37px;
-  height: 37px;
+  text-align: center;
+  border-radius: 8px;
+  //margin-right: 20px;
+  @media (max-width: $width-sm) {
+    float: none;
+    //margin-left: 20px;
+    margin-right: auto;
+  }
+}
+
+a.si-google {
+  display: inline-block;
+  float: right;
+  @media (max-width: $width-md) {
+    float: none;
+  }
+}
+
+.icon-google {
+  color: white;
+  font-size: 25px;
+  background-color: #b62b1c;
+  border: 1px solid white;
+  width: 37px;
   text-align: center;
   border-radius: 8px;
   float: right;
   @media (max-width: $width-sm) {
-    margin-bottom: 20px;
     float: none;
-    //margin-left: auto;
-    //margin-right: auto;
-  }
-  &:before {
-    top: 5px;
-    position: relative;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
