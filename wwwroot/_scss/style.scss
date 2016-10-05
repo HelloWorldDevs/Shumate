@@ -5484,7 +5484,7 @@ blockquote.pull-right {
 	position: absolute;
 	top: 50%;
 	margin-top: -18px;
-	left: -36px;
+	left: -18px;
 	zoom: 1;
 	//width: 36px;
 	//height: 36px;
@@ -5494,7 +5494,7 @@ blockquote.pull-right {
 	background-color: #FFF;
 	font-size: 36px;
 	border-radius: 50%;
-	opacity: 0;
+	opacity: 1;
 	-webkit-transition: all .3s ease;
 	-o-transition: all .3s ease;
 	transition: all .3s ease;
@@ -5518,7 +5518,7 @@ blockquote.pull-right {
 
 .owl-carousel  .owl-nav .owl-next {
 	left: auto;
-	right: -36px;
+	right: -18px;
 }
 
 .owl-carousel-full  .owl-nav .owl-next {
