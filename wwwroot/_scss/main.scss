@@ -123,11 +123,20 @@ a:hover.link-underline {
   color: #4EA292;
 }
 
+//#mobile-background {
+//  display: none;
+//  @media (max-width: $width-sm) {
+//    display: block;
+//    position: relative;
+//  }
+//}
+
 #mobile-background {
-  display: none;
-  @media (max-width: $width-sm) {
+  & a {
     display: block;
-    position: relative;
+  }
+  & img {
+    width: 100%;
   }
 }
 
@@ -407,4 +416,9 @@ margin-left: auto;
 
 a:hover.force-hover-underline {
   text-decoration: underline !important;
+}
+
+#slider {
+  height: 50vw;
+  max-height: 800px;
 }
