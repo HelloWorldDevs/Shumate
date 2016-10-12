@@ -422,3 +422,15 @@ a:hover.force-hover-underline {
   height: 50vw;
   max-height: 780px;
 }
+
+#bf-revz-widget-84623823 {
+  max-height:640px !important;
+}
+
+//fix for iPhone Mobile issue
+input[type='text'],
+input[type='email'],
+input[type='phone'],
+textarea {
+  font-size: 16px;
+}
