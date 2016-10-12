@@ -26666,7 +26666,7 @@ section {
 
 a:hover.link-underline {
   text-decoration: underline;
-  color: #4EA292;
+  color: inherit;
 }
 
 #mobile-background a {
