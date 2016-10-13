@@ -26807,7 +26807,7 @@ body {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .mobile-insurance-fix {
     display: block;
     margin-top: -30px;
@@ -26819,7 +26819,7 @@ body {
   background-image: url("./../images/invisalign-feature.jpg");
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #section-invisalign {
     padding-top: 0px;
     background-color: #faf4ea;
@@ -26845,7 +26845,7 @@ body {
   background-image: url("./../images/shumate-map.png");
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #section-location {
     background-image: none;
     background-color: white;

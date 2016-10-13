@@ -90,7 +90,8 @@
   // initiate swiper
   const mySwiper = new Swiper('.swiper-container', {
     speed: 400,
-    autoplay: 6000
+    autoplay: 6000,
+    loop true
   });
 
   
